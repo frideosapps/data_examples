@@ -73,7 +73,7 @@ class InheritedPageState extends State<InheritedGenericPage> {
                 Navigator.push(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => InheritedProvider(
+                        builder: (context) => InheritedProvider<Data>(
                               child: SecondPage(),
                               inheritedData: data,
                             )));
