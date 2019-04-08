@@ -11,6 +11,8 @@ An example app showing different ways to pass to and share data with widgets and
 - Global singleton BLoC
 - Callbacks
 
+A detailed explanation on this article on Medium: 
+https://medium.com/flutter-community/simple-ways-to-pass-to-and-share-data-with-widgets-pages-f8988534bd5b
 
 ### Packages used:
 
