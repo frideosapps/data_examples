@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:intl/intl.dart';
 
+import 'package:frideos_core/frideos_core.dart';
+
 import 'package:frideos/frideos.dart';
 
 class CallbacksPage extends StatefulWidget {
@@ -55,7 +57,7 @@ class CallbacksPageState extends State<CallbacksPage> {
               padding: EdgeInsets.all(12.0),
               child: Column(
                 children: <Widget>[
-                  Text('StatefulWidget and callbacka',
+                  Text('StatefulWidget and callbacks',
                       style: TextStyle(fontWeight: FontWeight.w700)),
                   Text("Time: $dateTime"),
                   Text("Text: $text"),

@@ -1,4 +1,4 @@
-import 'package:frideos/frideos.dart';
+import 'package:frideos_core/frideos_core.dart';
 
 class SingletonBloc {
   static final SingletonBloc _singletonBloc = new SingletonBloc._internal();

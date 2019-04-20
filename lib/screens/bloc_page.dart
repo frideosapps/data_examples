@@ -16,7 +16,7 @@ class SingletonBlocPageState extends State<SingletonBlocPage> {
 
   @override
   Widget build(BuildContext context) {
-    textController.text = bloc.text.outStream.value;
+    textController.text = bloc.text.value;
 
     return Scaffold(
       appBar: AppBar(
@@ -69,7 +69,7 @@ class SecondPageState extends State<SecondPage> {
   @override
   void initState() {
     super.initState();
-    textController.text = bloc.text.outStream.value;
+    textController.text = bloc.text.value;
   }
 
   @override
@@ -84,7 +84,7 @@ class SecondPageState extends State<SecondPage> {
         child: Column(
           children: <Widget>[
             StreamedWidget(
-                initialData: bloc.text.outStream.value,
+                initialData: bloc.text.value,
                 stream: bloc.text.outStream,
                 builder: (context, snapshot) {
                   return TextField(

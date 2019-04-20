@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:intl/intl.dart';
 
+import 'package:frideos_core/frideos_core.dart';
+
 import 'package:frideos/frideos.dart';
 
 import '../models/data.dart';
