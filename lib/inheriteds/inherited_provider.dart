@@ -13,7 +13,6 @@ class InheritedProvider<T> extends InheritedWidget {
       inheritedData != oldWidget.inheritedData;
 
   static T of<T>(BuildContext context) =>
-      (context.inheritFromWidgetOfExactType(InheritedProvider<T>().runtimeType)
-              as InheritedProvider<T>)
+      (context.dependOnInheritedWidgetOfExactType<InheritedProvider<T>>())
           .inheritedData;
 }
